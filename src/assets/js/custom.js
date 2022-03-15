@@ -23,10 +23,12 @@ const customInitFunctions = () => {
             if (width < 1170) {
                 $("body").addClass("mini-sidebar");
                 $('.navbar-brand span').hide();
+                $('.span-logo-mini').show();
                 $(".sidebartoggler i").addClass("ti-menu");
             } else {
                 $("body").removeClass("mini-sidebar");
                 $('.navbar-brand span').show();
+                $('.span-logo-mini').hide();
             }
     
             var height = ((window.innerHeight > 0) ? window.innerHeight : this.screen.height) - 1;
@@ -48,12 +50,14 @@ const customInitFunctions = () => {
                 $("body").trigger("resize");
                 $("body").removeClass("mini-sidebar");
                 $('.navbar-brand span').show();
-                
+                $('.span-logo-mini').hide();
+                console.log('mini');
             } else {
                 $("body").trigger("resize");
                 $("body").addClass("mini-sidebar");
                 $('.navbar-brand span').hide();
-                
+                $('.span-logo-mini').show();
+                console.log('max');
             }
         });
     
@@ -142,4 +146,4 @@ const customInitFunctions = () => {
     });
 }
 
-customInitFunctions();
+//customInitFunctions();

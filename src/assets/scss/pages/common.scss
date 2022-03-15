@@ -584,6 +584,10 @@ ul#themecolors {
     background: $muted;
 }
 
+.poderosa-theme {
+    background: $muted;
+}
+
 .green-theme {
     background: $success;
 }
@@ -609,6 +613,16 @@ ul#themecolors {
 }
 
 .default-dark-theme {
+    background: $dark;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, $dark 0%, $dark 23%, $muted 23%, $muted 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $dark 0%, $dark 23%, $muted 23%, $muted 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $dark 0%, $dark 23%, $muted 23%, $muted 99%);
+}
+
+.poderosa-dark-theme {
     background: $dark;
     /* Old browsers */
     background: -moz-linear-gradient(left, $dark 0%, $dark 23%, $muted 23%, $muted 99%);
